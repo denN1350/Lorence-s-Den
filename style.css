@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: rgb(255,255,255,.87);
+}
+/* Animations*/
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes disappear {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #121212;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+.navbar ul{
+    background-color:rgba(255,255,255,.07);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}    
+.navbar ul li{
+    float: right;
+}
+
+.navbar ul li a{
+    font-size: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+/* Home Page */
+
+.welcome {
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    padding-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 50vh   ;
+}
+
+#Title{
+    border-left-style:  solid;
+    border-right-style:  solid;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+.welcome div{
+    position: absolute;
+    font-size: 1.2em;
+    bottom: 75px; 
+}
+
+/* Pages */
+.pages {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pages div{
+    border-radius: 3%;
+    box-shadow: 0px 3px 10px 10px rgb(0, 0, 0, 0.03);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    text-align:center;
+    width: 500px;
+    height: 500px;
+    margin:60px;
+    margin-top: 0px;
+    background-color: rgba(255,255,255,3%);
+    transition: 0.5s;
+}
+
+.pages div:hover{
+    color: rgb(0, 0, 0,87%);
+    background-color: #03dac4;
+}
+
+.pages div img{
+    position: relative;
+    padding-top: 50px;
+    width: 300px;
+}
+
+.pages a{
+    text-decoration: none;
+    color:rgb(255,255,255,.87) ;
+}
+#Projects{
+    position: relative;
+    padding-top: 100px;
+}
+
+
