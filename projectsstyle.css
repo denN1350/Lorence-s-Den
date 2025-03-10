@@ -113,6 +113,7 @@ body{
     align-items: center;
 }
 .pages div{
+    font-size: 2em;
     border-radius: 3%;
     box-shadow: 0px 3px 10px 10px rgb(0, 0, 0, 0.03);
     animation: appear ease-in;
@@ -133,6 +134,7 @@ body{
 }
 
 .pages div img{
+    border-radius: 5%;
     position: relative;
     padding-top: 50px;
     width: 300px;
@@ -142,9 +144,6 @@ body{
     text-decoration: none;
     color:rgb(255,255,255,.87) ;
 }
-#Projects{
-    position: relative;
-    padding-top: 100px;
-}
+
 
 

@@ -98,53 +98,88 @@ body{
 }
 
 .welcome div{
-    position: relative;
+    position: absolute;
     font-size: 1.2em;
-    padding-top: 10%;
+    bottom: 75px; 
 }
 
-
-/* Pages */
-.pages {
+.welcome img{
+    opacity: 15%;
     position: relative;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    size: 50vh;
+    padding-top: 25vh;
 }
-.pages div{
-    border-radius: 3%;
-    box-shadow: 0px 3px 10px 10px rgb(0, 0, 0, 0.03);
+
+/* academics */
+
+.academics{
     animation: appear ease-in;
     animation-timeline: view();
     animation-range: entry 0;
-    text-align:center;
-    width: 500px;
-    height: 500px;
-    margin:60px;
-    margin-top: 0px;
-    background-color: rgba(255,255,255,3%);
-    transition: 0.5s;
-}
-
-.pages div:hover{
-    color: rgb(0, 0, 0,87%);
-    background-color: #03dac4;
-}
-
-.pages div img{
+    display: flex;
+    flex-direction: row;
     position: relative;
-    padding-top: 50px;
-    width: 300px;
+    align-content: center;
+    margin: 10%;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255,7%);
 }
-
-.pages a{
-    text-decoration: none;
-    color:rgb(255,255,255,.87) ;
-}
-#Projects{
+.academics img{
     position: relative;
-    padding-top: 100px;
+    margin-left: 10%;
+    width:30%;
+    height:30%;
+}
+.academics div{
+    position: relative;
+    margin: auto;
+    font-size: 1.5em;
 }
 
+.education{
+    animation: appear ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-content: center;
+    margin: 10%;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255,7%);
+}
+.education img{
+    position: relative;
+    margin-left: 10%;
+    width:30%;
+    height:30%;
+}
+.education div{
+    position: relative;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+.songs{
+    animation: appear ease-in;
+    animation-timeline: view();
+    animation-range: entry 0;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    margin: 10%;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255,7%);
+}
+
+.songs div{
+    display: flex;
+    flex-direction: row;
+}
+
+.Header{
+    font-size: 1.5em;
+
+}
 
