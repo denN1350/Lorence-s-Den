@@ -32,14 +32,25 @@ body{
     width: 100%;
     top: 0;
     z-index: 9999;
+    
 }
 .navbar ul{
     background-color:rgba(255,255,255,.07);
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 5%;
     overflow: hidden;
-}    
+}
+.navbar ul p{
+    font-size: 1em;
+    padding: 0;
+    font-weight: bold;
+    float: left;
+}
+.navbar ul p mark{
+    color: #03dac4;
+    background-color: rgb(0, 0, 0, 0);
+}
 .navbar ul li{
     float: right;
 }
@@ -71,8 +82,10 @@ body{
     transition: 0.5s;
 }
 
-
-
+.change{
+    color:#03dac4;
+    background-color: rgb(0, 0, 0, 0);
+}
 /* Home Page */
 
 .welcome {
@@ -112,6 +125,8 @@ body{
     width: 100%;
     size: 50vh;
     padding-top: 0vh;
+    -webkit-mask-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.25),rgba(0,0,0,0));
+    mask-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.25),rgba(0,0,0,0));
 }
 
 /* Information */
@@ -133,6 +148,7 @@ body{
     margin-left: 10%;
     width:30%;
     height:30%;
+    opacity: 80%;
 }
 .information div{
     position: relative;
@@ -140,49 +156,10 @@ body{
     font-size: 1.5em;
 }
 
-.education{
-    animation: appear ease-in;
-    animation-timeline: view();
-    animation-range: entry 0;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-content: center;
-    margin: 10%;
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255,7%);
-}
-.education img{
-    position: relative;
-    margin-left: 10%;
-    width:30%;
-    height:30%;
-}
-.education div{
-    position: relative;
-    margin: auto;
-    font-size: 1.5em;
-}
-
-.songs{
-    animation: appear ease-in;
-    animation-timeline: view();
-    animation-range: entry 0;
-    position: relative;
-    text-align: center;
-    align-content: center;
-    margin: 10%;
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255,7%);
-}
-
-.songs div{
-    display: flex;
-    flex-direction: row;
-}
-
 .Header{
-    font-size: 1.5em;
+    font-size: 2em;
+    color: #03dac4;
+    font-weight: bold;
 
 }
 
