@@ -47,7 +47,8 @@ body{
     font-weight: bold;
     float: left;
 }
-.navbar ul p mark{
+
+.change{
     color: #03dac4;
     background-color: rgb(0, 0, 0, 0);
 }
